@@ -1,0 +1,285 @@
+ion-header{
+  width: 100%;
+  height: 70px;
+  padding: 19px 21px 16px 16px;
+  background-color: #112;
+
+}
+.Group-262 {
+  width: 101px;
+  height: 30px;
+  margin: 0 34px 0 0;
+  object-fit: contain;
+}
+.CHATBOTS {
+  width: 58px;
+  height: 10px;
+  margin: 15px 8px 5px 10px;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+
+}
+.flex-right{
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+
+
+
+.HELP-CENTER {
+  width: 74px;
+  height: 10px;
+  margin: 15px 13px 5px 8px;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #c4c4c4;
+}
+.Vector {
+  width: 15px;
+  height: 15px;
+  margin: 12px 12px 3px 13px;
+  background-color: #fff;
+}
+
+.Group-39 {
+  width: 15px;
+  height: 15px;
+  margin: 12px 0 3px 12px;
+  object-fit: contain;
+}
+.Rectangle-12 {
+  width: 100%;
+  height: 60px;
+ /* margin: 70px 0 145px;
+  padding: 14px 13px 21px 220px;*/
+  background-color: #171b47;
+}
+.Group1{
+  width: 408px;
+  height: 40px;
+  padding-right: 0px;
+  padding-left: 366px;
+  padding-top: 15px;
+
+}
+.Rectangle-13 {
+  width: 110px;
+  height: 31px;
+  flex-grow: 0;
+ /* margin: 0 0 0 12px;*/
+ /* padding: 7px 16px 11px 15px;*/
+  border: solid 1px #3f7de8;
+ /* margin-top: 10px;
+  margin-right: 13px;
+  margin-bottom: 21px;*/
+}
+.rect {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.Create-ChatBot1 {
+  width: 90px;
+  height: 7.1px;
+  flex-grow: 0;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+.menu-navbar{
+  display: none;
+}
+.menu-navbar{
+  display:block;
+
+
+
+}
+.menu{
+  float:right;
+  height: 10%;
+  width: 10%;
+  position: relative;
+  bottom: 25px;
+  margin-right: 5%;
+}
+.img1{
+
+  /*margin: 0 83px 0 0;*/
+  object-fit: contain;
+  width: 66px;
+  height: 40px;
+  padding-top: 15px;
+}
+.Name-of-ChatBot {
+
+  flex-grow: 0;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  padding-top: 10px;
+    padding-left: 10px;
+    width: 194px;
+    height: 15px;
+}
+
+.providers-body{
+  width: 100%;
+}
+.title {
+  margin-left: 10%;
+  margin-top: 5%;
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 500;
+  color: #546e7a;
+}
+.line {
+  color: #7c8292;
+  background-color: #7c8292;
+  height: 1px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 0;
+}
+
+
+
+.providers{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap
+}
+.card-provider-title {
+  margin-top: 10%;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  color: #a9b1c1;
+}
+.card-line{
+  background-color: #7c8292;
+  margin-top: 20%;
+  margin-bottom: 5%;
+}
+.card-connect{
+  width: 100%;
+  margin: 0;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #3f7de8;
+}
+.watson {
+  margin-top: 3%;
+  margin-left: 10%;
+  width: 140px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: -7px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+
+}
+.watson_icon {
+  width: 35px;
+  height: 32.5px;
+  margin-top: 20%;
+  margin-left: 38%;
+}
+.microsoft {
+  margin-top: 3%;
+  margin-left: 5%;
+  width: 140px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: -7px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+.microsoft_icon{
+  width: 35px;
+  height: 32.5px;
+  margin-top: 20%;
+  margin-left: 38%;
+}
+.dialogflow {
+  margin-top: 3%;
+  margin-left: 10%;
+  width: 140px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: -7px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+.dialogflow_icon{
+  width: 35px;
+  height: 35px;
+  margin-top: 20%;
+  margin-left: 38%;
+}
+.rasa {
+  margin-top: 3%;
+  margin-left: 5%;
+  width: 140px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: -7px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+.rasa_icon{
+  width: 50px;
+  height: 24.3px;
+  margin-top: 27%;
+  margin-left: 25%;
+}
+.amazon-lex {
+  margin-top: 3%;
+  margin-left: 10%;
+  width: 140px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: -7px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+.amazonlex_icon{
+  width: 35px;
+  height: 35px;
+  margin-top: 20%;
+  margin-left: 38%;
+}

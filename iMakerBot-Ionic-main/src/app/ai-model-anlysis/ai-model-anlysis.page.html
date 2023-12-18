@@ -1,0 +1,177 @@
+
+<ion-header class="header">
+
+
+
+
+  <ion-img  class="img"src="assets/iMakerBot.svg"></ion-img>
+  <div class="nav1">
+
+    <a class="chatbots">CHATBOTS</a>
+  <a class="help_chatbots">Help Center</a>
+  <a class="user">
+    <i class="fas fa-bell"></i>
+    Sahli Mohamed
+    <i class="fas fa-caret-down"></i>
+
+
+  </a>
+  </div>
+  <div class="menu-navbar">
+    <ion-img *ngIf="!menuBtn1" style="color: beige;"(click)="menu()" class="menu" src="assets/bar2.svg">
+
+    </ion-img>
+
+
+  </div>
+
+
+
+
+
+
+</ion-header>
+
+<ion-content>
+  <div style="background-color: white;">
+    <ion-card *ngIf="menuBtn1" class="nav2">
+      <ion-card-header>
+        <ion-img (click)="close()"style="height: 7%;width: 7%;float: left;"src="assets/close.svg"></ion-img>
+
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-list style="border-radius: 20px;">
+          <ion-item >
+
+            <a >CHATBOTS</a>
+          </ion-item>
+          <ion-item>
+            <a >Help Center</a>
+          </ion-item>
+          <ion-item>
+            <a >
+              <i class="fas fa-bell"></i>
+              Sahli Mohamed
+              <i class="fas fa-caret-down"></i>
+
+
+            </a>
+          </ion-item>
+        </ion-list>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+
+  <div class="secondNav"style="background: rgb(51, 51, 107);padding: 10px;">
+    <a class="demoBot">
+
+      <i style="margin-right: 5px;color:white"class="fas fa-comment-dots"></i>
+      demoBot</a>
+    <a class="MenuBtn">
+      <i *ngIf="!menuBtn2" (click)="open2()"class="bars" class="fas fa-bars"></i>
+    </a>
+    <a class="Generateur">Builder</a>
+    <a class="Intelegence">Artificial Intelegence</a>
+    <a [routerLink]="['/channels']"class="Canaux">Channels</a>
+    <a class="Analytique">Analytics</a>
+    <a class="point">...</a>
+    <a class="logo">
+      <i style="margin-left: 7px;"class="fas fa-puzzle-piece"></i>
+      <i style="margin-left: 7px;"class="fas fa-cog"></i>
+      <i  style="margin-left: 7px;"class="fas fa-user-friends"></i>
+      <i   style="margin-left: 7px;"class="fas fa-vial"></i>
+
+
+    </a>
+
+  </div>
+
+  <ion-card  *ngIf="menuBtn2" class="nav3">
+    <ion-card-header>
+      <ion-img (click)="close2()"style="height: 7%;width: 7%;float: left;"src="assets/close.svg"></ion-img>
+
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list style="border-radius: 20px;">
+        <ion-item >
+
+
+          <a style="margin-left: 5%;">Builder</a>
+    <a style="margin-left:12%;">Artificial Intelegence</a>
+        </ion-item>
+        <ion-item>
+          <a [routerLink]="['/channels']" style="margin-left: 5%;">Channels</a>
+    <a style="margin-left: 15%;">Analytics</a>
+        </ion-item>
+        <ion-item>
+          <a > &nbsp; &nbsp;&nbsp;...</a>
+        </ion-item>
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+
+
+<div style="margin-top: 70px;margin-left: 10%;font-size: 30px;color:rgb(75, 75, 79);border-color:black;">AI model analysis</div>
+<hr style="width: 70%;height: 2px;">
+<div style="margin-left: 50px;">
+  <ion-row>
+    <ion-col>
+      <ion-card style="border-radius: 10px;height: 90%;">
+        <ion-card-header>
+          <ion-card-title class="text-center"> Interctions</ion-card-title>
+
+        </ion-card-header>
+        <ion-card-content>
+          <ion-row>
+
+              <ion-img  style="width: 100px;"src="assets/Intercation.svg"></ion-img>
+
+            <ion-col>
+              <div class="interactions"style=""> Model metrics generated from the examples categorized in the enhancement tab</div>
+
+            </ion-col>
+          </ion-row>
+
+
+
+        </ion-card-content>
+      </ion-card>
+
+    </ion-col>
+    <ion-col>
+      <ion-card style="border-radius: 10px;height: 90%;">
+        <ion-card-header>
+          <ion-card-title class="text-center"> File</ion-card-title>
+
+        </ion-card-header>
+        <ion-card-content>
+          <ion-row>
+            <ion-img style="width: 100px;" src="assets/file.svg"></ion-img>
+            <ion-col>
+
+
+              <div class="interactions"style=""> Analyse your model from a file with examples and expected intentions</div>
+            </ion-col>
+
+          </ion-row>
+
+
+
+        </ion-card-content>
+      </ion-card>
+
+    </ion-col>
+  </ion-row>
+</div>
+
+
+
+
+
+</ion-content>
+

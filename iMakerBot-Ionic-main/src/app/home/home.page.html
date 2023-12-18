@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="rgb(27, 27, 56);"class="tolbar">
+    
+    <ion-title >
+      
+      <ion-img  class="img"src="assets/argon-whiteccp.png"></ion-img>
+      <h3  class="text-center textHeader "> Welcome To ImakerBot </h3>
+     
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-grid class="contenu">
+    <ion-row>
+      
+        
+          <ion-buttons >
+          <ion-button  class="btn btn-outline-primary google">
+            <i class="fab fa-google"></i>
+            &nbsp; <label>GOOGLE</label> </ion-button>
+          <ion-button class="btn btn-outline-primary facebook">
+            <i class="fab fa-github"></i>
+            &nbsp; <label>GITHUB</label> </ion-button>
+            </ion-buttons>
+        
+        
+        
+      
+    </ion-row>
+    <br>
+    <br>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button [routerLink]="['/register']" expand="block" color="primary">Register</ion-button>
+        <br>
+        <i class="bi bi-facebook"></i>
+        
+
+        <span class="or">Or</span>
+        <br>
+        <br>
+        <hr>
+
+        <span class="already">Already a user?</span>
+        <br>
+        <br>
+
+        <ion-button  [routerLink]="['/login']" expand="block" color="danger">Sign In</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

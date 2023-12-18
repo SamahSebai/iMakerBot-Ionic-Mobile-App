@@ -1,0 +1,170 @@
+<ion-header>
+  <!-- <ion-toolbar>
+   </ion-toolbar>-->
+   <div class="flex">
+   <ion-img  class="Group-262" src="assets/iMakerBot.svg"></ion-img>
+   <span class="CHATBOTS">
+     CHATBOTS
+   </span>
+   <span class="HELP-CENTER">
+     HELP CENTER
+   </span>
+   <ion-icon name="notifications-outline" style="color: white; margin-top: 12px;"></ion-icon>
+   <ion-img  class="Group-39" src="assets/Group 39.svg"></ion-img>
+
+ </div>
+
+ </ion-header>
+
+<ion-content>
+ <ion-row>
+    <ion-col style="padding: 0px;">
+      <div class="Rectangle-12">
+      <div class="rect ">
+
+        <ion-img class="img1" src="assets/list 1.svg"> </ion-img>
+        <span class="Name-of-ChatBot">
+          Name of ChatBot
+          <ion-icon name="chevron-down-outline" ></ion-icon></span>
+          <ion-icon name="settings-outline" style="color: white;margin-top: 18px;"></ion-icon>
+          <ion-icon name="extension-puzzle-outline" style="color: white; margin-top: 18px;"></ion-icon>
+          <ion-icon name="people-outline" style="color: white; margin-top: 18px;"></ion-icon>
+          <ion-icon name="flask-outline" style="color: white; margin-top: 18px;     margin-right: 10px;"></ion-icon>
+       </div></div>
+    </ion-col>
+  </ion-row>
+  <ion-grid style="background-color: #f0f3f6; " >
+    <div class="providers-body">
+      <ion-item lines="none" >
+      <div class="title"><ion-icon name="chevron-back-outline" style="width: 22px; height: 22px;"></ion-icon><span> IBM Watson </span></div>
+      <label class="switch">
+        <input
+          type="checkbox"
+          #checkBox
+          (change)="(true)"
+         [(ngModel)]="isActivated"
+        />
+        <span class="slider"></span>
+      </label>
+ </ion-item>
+      <div class="line"></div>
+      <div class="card-links">
+        <div class="card-header">
+          <ul class="nav">
+            <a
+              href="javascript:void(0);"
+              class="nav-el"
+              id="overview"
+              (click)="selectHandler('overview')"
+              [ngClass]="{
+                selected: selectedId === 'overview',
+                unselected: selectedId !== 'overview'
+              }"
+            >
+              Overview
+              <div *ngIf="selectedId === 'overview'" class="Line-37"></div>
+            </a>
+            <a
+              href="javascript:void(0);"
+              class="nav-el"
+              id="config"
+              (click)="selectHandler('config')"
+              [ngClass]="{
+                selected: selectedId === 'config',
+                unselected: selectedId !== 'config'
+              }"
+            >
+              Configuration
+              <div *ngIf="selectedId === 'config'" class="Line-37"></div>
+            </a>
+            <a href="javascript:void(0);" class="nav-el">Documentation</a>
+          </ul>
+        </div>
+        <div class="card-line"></div>
+        <div class="card-body">
+          <div *ngIf="selectedId === 'overview'" class="d-flex">
+            <img
+              src="/assets/watson_icon2 1.webp"
+              class="watson_icon"
+            />
+            <div class="card-right">
+              <p class="card-text">
+                Go to the Bluemix panel and log in with your account. If you do
+                not have one, sign up.
+              </p>
+            </div>
+          </div>
+          <div *ngIf="selectedId === 'config'" class="d-flex">
+            <img
+              src="/assets/watson_icon2 1.webp"
+              class="watson_icon"
+            />
+            <div class="card-right">
+              <p class="card-text">AUTHENTICATION WITH API KEY</p>
+              <input
+                class="form-control"
+                aria-label="Sizing example input"
+                type="text"
+                placeholder="Api Key"
+                [disabled]="oldAuth"
+              />
+              <input
+                class="form-control"
+                aria-label="Sizing example input"
+                type="text"
+                placeholder="Url"
+                [disabled]="oldAuth"
+              />
+              <p class="card-text">Or</p>
+              <span class="old-auth" style="display: block;">
+                <i
+                  class="fa fa-chevron-left title-icon"
+                  *ngIf="!oldAuth"
+                  (click)="oldAuthHandler()"
+                ></i>
+                <i
+                  class="fa fa-chevron-down title-icon"
+                  *ngIf="oldAuth"
+                  (click)="oldAuthHandler()"
+                ></i>
+                AUTHENTICATION WITH USER NAME AND PASSWORD (OLD MODEL OF AUTHENTICATION)
+              </span>
+              <input
+                *ngIf="oldAuth"
+                class="form-control"
+                aria-label="Sizing example input"
+                type="text"
+                placeholder="Username"
+              />
+              <input
+                *ngIf="oldAuth"
+                class="form-control"
+                aria-label="Sizing example input"
+                type="text"
+                placeholder="Password"
+              />
+              <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-primary card-button">
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div
+    class="d-flex flex-column" style="margin-top: 315px"
+    [ngStyle]="{ backgroundColor: '#f1f4f6' }"
+  >
+    <div class="Line-35"></div>
+    <span class="Need-help-to-create-your-company-chatbot-Request-a-quote">
+      © 2021 iMakerBot - Powered by GDCollectData | All rights reserved |
+      <span class="text-style-1">Terms of Use</span>
+    </span>
+  </div>
+
+
+  </ion-grid>
+</ion-content>

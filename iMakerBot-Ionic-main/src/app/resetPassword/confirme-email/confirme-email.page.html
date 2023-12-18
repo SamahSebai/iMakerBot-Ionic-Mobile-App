@@ -1,0 +1,44 @@
+<ion-content>
+
+  <ion-grid>
+    <div class="Ellipse-6"></div>
+  <ion-row style="width: 50px; height: 20px;">
+    <ion-col>
+      <ion-img  class="Group-37" src="assets/iMakerBot.svg"></ion-img>
+    </ion-col>
+  </ion-row>
+  <ion-card class="Rectangle-100">
+      <ion-card-content >
+        <ion-icon name="chevron-back-outline" ></ion-icon>
+        <span class="Forgot-your-password">
+          Forgot your password?
+        </span>
+        <br>
+        <br>
+        <span class="It-happens-Enter-the-email-registered-on-iMakerBot-and-we-will-send-you-a-link-so-you-can-create">
+          It happens (: <br>
+        Enter the email registered on iMakerBot and we will send you a link so you can create a new password!
+        </span>
+        <br>
+        <br>
+        <br>
+        <form [formGroup]="emailForm" (ngSubmit)="send()">
+        <div style="max-width:400px;margin:auto">
+        <div class="input-icons">
+          <ion-icon name="mail-outline" class=" icon-email"></ion-icon>
+           <input class="input" placeholder="Email" type="email"  name="email"
+           formControlName="email">
+       </div>
+      </div>
+      <ion-button  class="ion-button-center" fill="clear" type="submit" [disabled]="f.email.errors"  color="danger" expand="block"><span class="Send">
+        Send
+      </span></ion-button>
+    </form>
+      </ion-card-content>
+
+
+  </ion-card>
+  <div class="Ellipse-5" ></div>
+  <div class="Ellipse-7"></div>
+</ion-grid>
+</ion-content>

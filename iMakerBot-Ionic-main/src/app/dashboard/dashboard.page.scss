@@ -1,0 +1,874 @@
+ion-header{
+  width: 100%;
+  height: 70px;
+  padding: 19px 21px 16px 16px;
+  background-color: #112;
+
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+
+}
+.Group-262 {
+  width: 101px;
+  height: 30px;
+  margin: 0 34px 0 0;
+  object-fit: contain;
+}
+.CHATBOTS {
+  width: 58px;
+  height: 10px;
+  margin: 15px 8px 5px 10px;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+
+}
+.HELP-CENTER {
+  width: 74px;
+  height: 10px;
+  margin: 15px 13px 5px 8px;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #c4c4c4;
+}
+.Group-39 {
+  width: 15px;
+  height: 15px;
+  margin: 12px 0 3px 12px;
+  object-fit: contain;
+}
+ion-content {
+  --background: #f0f3f6;
+
+ }
+ .Rectangle-12 {
+  width: 100%;
+  height: 60px;
+ /* margin: 70px 0 145px;
+  padding: 14px 13px 21px 220px;*/
+  background-color: #171b47;
+}
+.rect {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.img1{
+
+  /*margin: 0 83px 0 0;*/
+  object-fit: contain;
+  width: 66px;
+  height: 40px;
+  padding-top: 15px;
+}
+.Name-of-ChatBot {
+
+  flex-grow: 0;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  padding-top: 10px;
+    padding-left: 10px;
+    width: 194px;
+    height: 15px;
+}
+.providers-body{
+  width: 100%;
+}
+.title {
+  margin-left: 10%;
+  margin-top: 5%;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 500;
+  color: #546e7a;
+}
+.Rectangle-57 {
+  width: 100px;
+    height: 26px;
+  flex-grow: 0;
+  margin: 23px 0px 5.3px 12px;
+  padding: 5px 10px 6px 14px;
+  border-radius: 10px;
+  background-color: #21cc79;
+  margin-right: 0px;
+}
+.-Add-Intents {
+  width: 86px;
+  height: 14px;
+  flex-grow: 0;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.line {
+  color: #7c8292;
+  background-color: #7c8292;
+  height: 1px;
+  width: 85%;
+  margin-left: 22px;
+}
+ion-item{
+  --background: #f0f3f6;
+  display: flex;
+    justify-content: space-between;
+
+
+}
+.Group-134 {
+  width: 27.5px;
+  height: 22.5px;
+  margin: 24px 2.5px 8.8px 19px;
+  object-fit: contain;
+}
+.Update {
+  width: 42px;
+  height: 12px;
+  margin: 25px 14px 8.3px 2.5px;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #7c8292;
+}
+.Rectangle-46 {
+  width: 147px;
+  height: 31px;
+  flex-grow: 0;
+  margin: 17px 19px 4.3px 14px;
+  padding: 5px 20px 6px 10px;
+  border-radius: 7px;
+  background-color: #3e7de8;
+}
+.Export {
+  width: 28px;
+  height: 13px;
+  flex-grow: 0;
+  margin: 0 0 0 11px;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.Rectangle-36 {
+  position: absolute;
+  right: 20px;
+
+
+}
+.date {
+  /*color: #7c8292;
+  /* margin-bottom: 20px;
+  margin-left: 20px;
+  width: 378px;
+  height: 54px;
+  flex-grow: 0;
+
+  padding: 14px 43px 15px 14px;
+  border-radius: 10px;
+  border: solid 1px #c4c4c4;
+  background-color: #fff;*/
+  width: 155px;
+  height: 29px;
+  margin: 10.8px 32px 18px 4px;
+  padding: 8px 5px 8px 6px;
+  border-radius: 10px;
+  border: solid 1px #c4c4c4;
+  background-color: #fff;
+  align-content: center;
+  text-align: left;
+
+}
+.deux {
+  display: flex;
+  flex-direction: column;
+}
+.Rectangle-35 {
+  width: 308px;
+  height: 109px;
+  flex-grow: 0;
+  margin: 55px 27px 21px 25px;
+  padding: 9px 36px 6px 22px;
+  border-radius: 10px;
+  box-shadow: -7px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+.Users {
+  width: 34px;
+  height: 14px;
+  flex-grow: 0;
+  margin: 0 203px 5px 0;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #546e7a;
+}
+.All-unique-user-who-received-or-sent-a-message-to-the-chatbot {
+  /*max-width: 266px;
+  height: 33px;
+  flex-grow: 0;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #7c8292;*/
+  width: 170px;
+  height: 17px;
+  flex-grow: 0;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #7c8292;
+}
+.ret {
+  display: flex;
+  flex-direction: row;
+}
+.Rectangle-44 {
+ /* max-width: 117px;
+  height: 78px;
+  margin-top: 20px;
+  flex-grow: 0;
+  padding: 8px 34px 12px 12px;
+  border-radius: 10px;
+  border: solid 1px #c4c4c4;
+  background-color: #f3f6fa;*/
+  width: 68px;
+  height: 46px;
+  flex-grow: 0;
+  margin: 0px 10px 0 110px;
+  padding: 0px 29.5px 8px 8px;
+  border-radius: 10px;
+  border: solid 1px #c4c4c4;
+  background-color: #f3f6fa;
+}
+.Active {
+  /*max-width: 56px;
+  height: 22px;
+  flex-grow: 0;
+  margin: 0 0 14px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f7de9;*/
+  width: 34.5px;
+  height: 14.7px;
+  flex-grow: 0;
+  margin: 0 0 9.3px;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f7de9;
+  font-weight: bold;
+}
+.Rectangle-45 {
+  /*max-width: 117px;
+  height: 78px;
+  flex-grow: 0;
+  margin-top: 20px;
+  margin-left: 25px;
+  padding: 8px 34px 12px 12px;
+  border-radius: 10px;
+  border: solid 1px #c4c4c4;
+  background-color: #f3f6fa;*/
+  width: 68px;
+  height: 46px;
+  flex-grow: 0;
+  margin: 0px 0 0;
+  padding: 0px 20.9px 8px 7.4px;
+  border-radius: 10px;
+  border: solid 1px #c4c4c4;
+  background-color: #f3f6fa;
+}
+.Engaged {
+ /* max-width: 71px;
+  height: 22px;
+  flex-grow: 0;
+  margin: 0 0 14px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f7de9;*/
+  width: 43.7px;
+  height: 14.7px;
+  flex-grow: 0;
+  margin: 0 0 9.3px;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f7de9;
+  font-weight: bold;
+}
+.Rectangle-55 {
+ /* width: 600px;
+  height: 252px;
+  flex-grow: 0;
+  margin: 50px 0 41px 32px;
+  padding: 20px 15px 22px 21px;
+  border-radius: 10px;
+  box-shadow: -7px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;*/
+  width: 308px;
+  height: 109px;
+  flex-grow: 0;
+  margin: 0px 27px 21px 25px;
+  padding: 8px 19px 7px 20px;
+  border-radius: 10px;
+  box-shadow: -7px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.Messages {
+  /*max-width: 119px;
+  height: 25px;
+  flex-grow: 0;
+  margin: 0 9px 15px 0;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #546e7a;*/
+  width: 71px;
+  height: 16px;
+  flex-grow: 0;
+  margin: 0 11px 4px 0;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #546e7a;
+}
+.They-are-counted-when-the-chatbot-send-or-receive-messages-from-contacts {
+  /*max-width: 424px;
+  height: 33px;
+  flex-grow: 0;
+  margin: 15px 73px 59px 6px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #7c8292;*/
+  width: 234px;
+  height: 22px;
+  flex-grow: 0;
+  margin: 4px 28px 3px 7px;
+  font-family: Roboto;
+  font-size: 10.5px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #7c8292;
+}
+.A {
+  display: flex;
+  flex-direction: row;
+}
+.Rectangle-54 {
+  /*max-width: 117px;
+  height: 78px;
+  flex-grow: 0;
+  margin-right: 10px;
+  margin-top: -30px;
+  padding: 8px 48px 12px 13px;
+  border-radius: 10px;
+  border: solid 1px #c4c4c4;
+  background-color: #f3f6fa;*/
+  width: 75px;
+  height: 46px;
+  flex-grow: 0;
+  margin: 0px 7px 1px 0;
+  padding: 0px 25.4px 6.5px 6.9px;
+  border-radius: 10px;
+  border: solid 1px #c4c4c4;
+  background-color: #f3f6fa;
+}
+.Total {
+ /* max-width: 56px;
+  height: 22px;
+  flex-grow: 0;
+  margin: 0 0 14px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f7de9;*/
+  width: 29.7px;
+  height: 11.8px;
+  flex-grow: 0;
+  margin: 0 0 7.5px;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f7de9;
+  font-weight: bold;
+}
+.Received {
+  /*max-width: 75px;
+  height: 22px;
+  flex-grow: 0;
+  margin: 0 0 14px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f7de9;*/
+  width: 39.7px;
+  height: 11.8px;
+  flex-grow: 0;
+  margin: 0 0 7.5px;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f7de9;
+  font-weight: bold;
+}
+.Sent {
+  /*max-width: 56px;
+  height: 22px;
+  flex-grow: 0;
+  margin: 0 0 14px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f7de9;*/
+  width: 29.7px;
+  height: 11.8px;
+  flex-grow: 0;
+  margin: 0 0 7.5px;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f7de9;
+  font-weight: bold;
+}
+.Active {
+  /*max-width: 72.2px;
+  height: 22px;
+  flex-grow: 0;
+  margin: 0 0 14px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f7de9;*/
+  width: 37.6px;
+  height: 11.8px;
+  flex-grow: 0;
+  margin: 0 0 7.5px;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f7de9;
+  font-weight: bold;
+}
+.rect-37-60 {
+  flex-direction: column;
+}
+.Rectangle-60 {
+  /*width: 970px;
+  height: 252px;
+  flex-grow: 0;
+  margin: 41px 0 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  box-shadow: -7px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;*/
+  width: 308px;
+  height: 103px;
+  flex-grow: 0;
+  margin: 0px 27px 21px 25px;
+  padding: 12px 43px 43px 20px;
+  border-radius: 10px;
+  box-shadow: -7px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+
+}
+.Proactive-messages-per-channel {
+  /*max-width: 351px;
+  height: 25px;
+  flex-grow: 0;
+  margin: 0 282px 64px 0;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #546e7a;*/
+  width: 176px;
+  height: 8px;
+  flex-grow: 0;
+  margin: 0 78px 32px 0;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #546e7a;
+}
+.There-are-no-proactive-messages-in-the-chosen-period {
+  /*max-width: 447px;
+  height: 25px;
+  flex-grow: 0;
+  font-family: Roboto;
+  margin-left: 150px;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #7c8292;*/
+  width: 221px;
+  height: 8px;
+  flex-grow: 0;
+  margin: 4px 28px 3px 7px;
+  font-family: Roboto;
+  font-size: 9px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #7c8292;
+}
+.Rectangle-37 {
+  /*width: 970px;
+  height: 350px;
+  flex-grow: 0;
+  margin-top: 148px;
+  padding: 29.2px 110.3px 13.2px 30.9px;
+  border-radius: 10px;
+  box-shadow: -7px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;*/
+  width: 308px;
+  height: 193px;
+  flex-grow: 0;
+  margin: 0px 27px 21px 25px;
+  padding: 12px 0px 0px 5px;
+  border-radius: 10px;
+  box-shadow: -7px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+.Rectangle-38 {
+ /* width: 970px;
+  height: 350px;
+  flex-grow: 0;
+  margin-top: 45px;
+  margin-left: -2px;
+  padding: 29.2px 110.3px 13.2px 30.9px;
+  border-radius: 10px;
+  box-shadow: -7px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;*/
+  width: 308px;
+  height: 193px;
+  flex-grow: 0;
+  margin: 0px 27px 21px 25px;
+  padding: 12px 0px 0px 5px;
+  border-radius: 10px;
+  box-shadow: -7px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+/*.dish {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.Dashboard1 {
+  max-width: 166px;
+  height: 33px;
+  margin-top: 15x;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #546e7a;
+}
+.box-btn {
+  display: flex;
+  padding-left: auto;
+}
+.Update {
+  max-width: 63px;
+  height: 23px;
+  flex-grow: 0;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #7c8292;
+}
+.Rectangle-46 {
+  width: 125px;
+  height: 48px;
+  flex-grow: 0;
+  margin: 0 9px 3px 34px;
+  padding: 10px 20px 15px;
+  border-radius: 7px;
+  background-color: #3e7de8;
+  display: flex;
+  flex-direction: row;
+}
+.img1 {
+  max-width: 60px;
+  height: 30px;
+  margin-left: -8px;
+}
+.Export {
+  max-width: 51px;
+  height: 22px;
+  flex-grow: 0;
+  margin-left: 14px;
+  margin-top: 5px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+@media screen and (max-with:375px) {
+  .Dashboard1 {
+    font-size: 23px;
+}
+.Rectangle-46 {
+  width: 42px;
+}
+
+}
+@media screen and (max-width: 440px) {
+  .Dashboard1 {
+    font-size: 27px;
+  }
+}
+/* Extra small devices (portrait phones, less than 576px) /
+@media screen and (max-width: 575.98px) {
+  .Dashboard1 {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 889.6px) {
+
+  .upd-box {
+    margin: auto;
+    width: 50%;
+  }
+  .Rectangle-46 {
+    width: 110px;
+    padding: 10px 14px -15px;
+  }
+  .Export {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+
+}
+@media screen and (max-width: 980px) {
+  .upd-box {
+    width: 120px;
+  }
+}
+ /* Medium devices (tablets, less than 992px) /
+ @media screen and (max-width: 937.6px) {
+  .Rectangle-46 {
+    margin-left: 7px;
+  }
+ }
+
+*/
+/*.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+}*/
+.Chart-wrapper {
+  display: block;
+  width: 300px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-left: 0px;
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #546e7a;
+}
+.Line-35 {
+  margin-top: 2%;
+  width: 100%;
+  height: 1px;
+  background-color: #7c8292;
+}
+.Need-help-to-create-your-company-chatbot-Request-a-quote {
+  width: 361px;
+  height: 15px;
+  margin: 5px 16px 0;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #7c8292;
+
+  margin-right: 0px;
+}
+
+.Need-help-to-create-your-company-chatbot-Request-a-quote .text-style-1 {
+  color: #3f7de8;
+}

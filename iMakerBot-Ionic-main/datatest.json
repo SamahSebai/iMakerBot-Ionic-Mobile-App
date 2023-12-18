@@ -1,0 +1,150 @@
+{
+  "login": [
+    {
+      "email": "mortadha500@gmail.com",
+      "password": "$2a$10$0TNW.uafYmXnFWhuICZere6qcXj5qjfYVeKO3FvQtBUhx8cLOsCsC",
+      "id": 1
+    },
+    {
+      "email": "mortadha500@gmail.com",
+      "password": "Mortadha1",
+      "id": 3
+    },
+    {
+      "email": "ali@gmail.com",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "email": "asma@gmail.com",
+      "password": "asma123",
+      "id": 5
+    },
+    {
+      "email": "ffff@gjlejdn",
+      "password": "fffff",
+      "id": 6
+    }
+  ],
+  "register": [
+    {
+      "email": "sameh@gmail.com",
+      "password": "$2a$10$mT34i5K0w1If5PX3hHPJIeGSu2CqvrkO/qoM170A1ljXBqlVaGbD.",
+      "companyEmployeesNumber": "www.code.fr",
+      "fullName": "sameh ",
+      "phoneNumber": 12345678,
+      "id": 2
+    },
+    {
+      "companyEmployeesNumber": 12,
+      "email": "sana@gmail.com",
+      "fullName": "sana",
+      "password": "1234",
+      "phoneNumber": 12345678,
+      "id": 3
+    },
+    {
+      "companyEmployeesNumber": 1234,
+      "email": "ahmed@gmail.com",
+      "fullName": "ahmed ",
+      "password": "ahmed123",
+      "phoneNumber": 12345678,
+      "id": 4
+    },
+    {
+      "companyEmployeesNumber": 123,
+      "email": "ali@gmail.com",
+      "fullName": "ali",
+      "password": "1234",
+      "phoneNumber": 12345678,
+      "id": 5
+    },
+    {
+      "companyEmployeesNumber": 123,
+      "email": "asma@gmail.com",
+      "fullName": "asma",
+      "password": "asma123",
+      "phoneNumber": 25341367,
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "active": 10,
+      "engaded": 23,
+      "date": "08-07-2022",
+      "country": "Tunisia",
+      "city": "Tunis"
+    }
+  ],
+  "Message": [
+    {
+      "total": 10,
+      "recieved": 15,
+      "sent": 10,
+      "active": 10
+    }
+  ],
+  "FB_Messenger": {
+    "recipient_id": "1254477777772919",
+    "message_id": "AG5Hz2Uq7tuwNEhXfYYKj8mJEM_QPpz5jdCK48PnKAjSdjfipqxqMvK8ma6AC8fplwlqLP_5cgXIbu7I3rBN0P",
+    "messaging_type": "<MESSAGING_TYPE>",
+    "recipient": {
+      "id": "<PSID>"
+    },
+    "message": {
+      "text": "hello, world!"
+    },
+    "url": "https://graph.facebook.com/v14.0/me/messages?access_token=<PAGE_ACCESS_TOKEN>"
+  },
+  "user": [
+    {
+      "id": 1,
+      "fullName": "Leanne Graham",
+      "email": "Sincere@april.biz",
+      "phone": "786557685",
+      "companyEmployeesNumber": "245132115",
+      "token": "AG5Hz2Uq7tuwNEhXfYYKj8mJEM_QPpz5jdCK48PnKAjSdjfipqxqMvK8ma6AC8fplwlqLP_5cgXIbu7I3rBN0P"
+    },
+    {
+      "id": 2,
+      "fullName": "Leanne Graham",
+      "email": "Sincere@april.biz",
+      "phone": "786557685",
+      "companyEmployeesNumber": "245132115",
+      "token": "AG5Hz2Uq7tuwNEhXfYYKj8mJEM_QPpz5jdCK48PnKAjSdjfipqxqMvK8ma6AC8fplwlqLP_5cgXIbu8I3rBN0P"
+    },
+    {
+      "id": 3,
+      "fullName": "Leanne Graham",
+      "email": "Sincere@april.biz",
+      "phone": "786557685",
+      "companyEmployeesNumber": "245132115",
+      "token": "AG5Hz2Uq7tuwNEhXfYYKj8mJEM_QPpz5jdCK48PnKAjSdjfipqxqMvK8ma6AC8fplwlqLP_5cgXIbu9I3rBN0P"
+    }
+  ],
+  "botmessages": [
+    {
+      "name": "iMakerBot",
+      "message": "Hi there my name is "
+    }
+  ],
+  "Block": [
+    {
+      "description": "bonjour",
+      "name": "amal",
+      "id": 1
+    }
+  ],
+  "Setting": [
+    {
+      "aiReliability": 5,
+      "automaticTracking": true,
+      "useRouterContext": true,
+      "sessionExpiration": 10,
+      "actionTimeout": 5,
+      "flowIdentifier": 8,
+      "configurationVariables": "config"
+    }
+  ]
+}
