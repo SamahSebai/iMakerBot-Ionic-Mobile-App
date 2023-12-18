@@ -1,0 +1,88 @@
+<ion-content>
+
+  <ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-img  class="Group-37" src="assets/iMakerBot.svg"></ion-img>
+    </ion-col>
+  </ion-row>
+    <div class="Ellipse-6"></div>
+    <div class="Ellipse-5" ></div>
+    <div class="Ellipse-7"></div>
+    <div class="flex-center">
+      <ion-card >
+      <div class="Rectangle-101">
+      <ion-card-header class="header">
+          <ion-item lines="none" >
+            <ion-label color="medium"  class="ion-text-center">Sign up with</ion-label>
+          </ion-item>
+          <div class="flex">
+            <ion-button class="Rectangle-109" fill="clear">
+              <ion-img  slot="start" src="assets/github.svg"  class="iconsicon-github"></ion-img>
+              <span class="GITHUB">
+                GITHUB
+              </span>
+            </ion-button>
+            <ion-button  class="Rectangle-105" fill="clear" >
+              <ion-img  slot="start" src="assets/google.svg"  class="google-1"></ion-img>
+              <span class="GOOGLE">
+                GOOGLE
+              </span>
+            </ion-button>
+          </div>
+        </ion-card-header>
+      </div>
+      <div class="Rectangle-100">
+        <ion-card-content style="padding-top: 1px!important;">
+          <ion-item lines="none" >
+            <ion-label color="medium" class="ion-text-center">Or sign in with credentials</ion-label>
+          </ion-item>
+          <form [formGroup]="RegisterForm" (ngSubmit)="Register()" >
+          <div style="max-width:400px;margin:auto">
+            <div class="input-icons">
+               <ion-icon name="person-outline" class=" icon"></ion-icon>
+                <input class="input" type="text" placeholder="Name" formControlName="FullName" name="FullName">
+            </div>
+            <div class="input-icons">
+              <ion-icon name="mail-outline" class=" icon-email"></ion-icon>
+               <input class="input" placeholder="Email" formControlName="email" type="email"  name="email" >
+           </div>
+           <div class="input-icons">
+            <ion-icon name="bag-outline" class=" icon-email"></ion-icon>
+             <input class="input"
+             placeholder="Password" formControlName="password" type="password"  name="password">
+         </div>
+         <div class="input-icons">
+          <ion-icon name="call-outline" class=" icon-email"></ion-icon>
+           <input class="input" type="number" placeholder="Phone" formControlName="PhoneNumber"name="PhoneNumber" >
+       </div>
+       <div class="input-icons">
+         <input class="input-Company" type="number"
+         placeholder="Company website" formControlName="companyEmployeesNumber" name="companyEmployeesNumber">
+     </div>
+
+     <ion-list class="input-list" lines="none">
+        <ion-select interface="popover" placeholder="Company Number of Employees" style="padding-left: 10px!important; " >
+          <ion-select-option value="20">20</ion-select-option>
+          <ion-select-option value="30">30</ion-select-option>
+          <ion-select-option value="40">40</ion-select-option>
+        </ion-select>
+    </ion-list>
+      </div>
+       <ion-item lines="none" >
+            <ion-checkbox color="primary"></ion-checkbox>
+            <ion-label color="medium" ><span class="Remember-me">
+              I agree with the Privacy Policy            </span></ion-label>
+          </ion-item>
+
+          <ion-button  class="ion-button-center" fill="clear" type="submit" expand="block"  [disabled]="f.FullName.errors || f.companyEmployeesNumber.errors || f.email.errors || f.PhoneNumber.errors || f.password.errors" ><span class="SIGN-IN">
+            SIGN IN
+          </span></ion-button>
+    </form>
+
+        </ion-card-content>
+        </div>
+      </ion-card> </div>
+
+  </ion-grid>
+</ion-content>

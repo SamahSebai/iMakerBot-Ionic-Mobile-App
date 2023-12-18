@@ -1,0 +1,326 @@
+<ion-header>
+  <!-- <ion-toolbar>
+   </ion-toolbar>-->
+   <div class="flex">
+   <ion-img  class="Group-262" src="assets/iMakerBot.svg"></ion-img>
+   <span class="CHATBOTS">
+     CHATBOTS
+   </span>
+   <span class="HELP-CENTER">
+     HELP CENTER
+   </span>
+   <ion-icon name="notifications-outline" style="color: white; margin-top: 12px;"></ion-icon>
+   <ion-img  class="Group-39" src="assets/Group 39.svg"></ion-img>
+
+ </div>
+
+ </ion-header>
+
+<ion-content>
+ <ion-row>
+    <ion-col style="padding: 0px;">
+      <div class="Rectangle-12">
+      <div class="rect ">
+
+        <ion-img class="img1" src="assets/list 1.svg"> </ion-img>
+        <span class="Name-of-ChatBot">
+          Name of ChatBot
+          <ion-icon name="chevron-down-outline" ></ion-icon></span>
+          <ion-icon name="settings-outline" style="color: white;margin-top: 18px;"></ion-icon>
+          <ion-icon name="extension-puzzle-outline" style="color: white; margin-top: 18px;"></ion-icon>
+          <ion-icon name="people-outline" style="color: white; margin-top: 18px;"></ion-icon>
+          <ion-icon name="flask-outline" style="color: white; margin-top: 18px;     margin-right: 10px;"></ion-icon>
+       </div></div>
+    </ion-col>
+  </ion-row>
+  <ion-grid style="background-color: #f0f3f6; " >
+    <div class="providers-body">
+      <ion-item lines="none"  >
+     <!-- <div class="title"><ion-icon name="chevron-back-outline" style="width: 22px; height: 22px;"></ion-icon><span> Messenger
+      </span></div>-->
+      <ion-icon name="chevron-back-outline" style="width: 22px; height: 22px;margin-top: 16px; margin-left: 0px; color: #7c8292!important;"></ion-icon>
+      <div class="title" style="width: 160px; margin-left: 0px;     margin-right: 115px;"><span> Messenger
+      </span>
+      </div>
+      <label class="switch">
+        <input
+          type="checkbox"
+          #checkBox
+          (change)="(true)"
+         [(ngModel)]="isActivated"
+        />
+        <span class="slider" style="width: 31px;height: 16px;"></span>
+      </label>
+ </ion-item>
+      <div class="line"></div>
+      <div class="card-links">
+        <div class="card-header">
+          <ul class="nav">
+            <a
+              href="javascript:void(0);"
+              class="nav-el"
+              id="overview"
+              (click)="selectHandler('overview')"
+              [ngClass]="{
+                selected: selectedId === 'overview',
+                unselected: selectedId !== 'overview'
+              }"
+            >
+              Overview
+              <div *ngIf="selectedId === 'overview'" class="Line-37"></div>
+            </a>
+            <a
+              href="javascript:void(0);"
+              class="nav-el"
+              id="config"
+              (click)="selectHandler('config')"
+              [ngClass]="{
+                selected: selectedId === 'config',
+                unselected: selectedId !== 'config'
+              }"
+            >
+            Settings
+              <div *ngIf="selectedId === 'config'" class="Line-37"></div>
+            </a>
+            <a href="javascript:void(0);"
+            class="nav-el"
+            id="customer"
+            (click)="selectHandler('customer')"
+            [ngClass]="{
+              selected: selectedId === 'customer',
+              unselected: selectedId !== 'customer'}">Customer Chat Plugin
+              <div *ngIf="selectedId === 'customer'" class="Line-37"></div></a>
+          </ul>
+        </div>
+        <div class="card-line"></div>
+        <div class="card-body">
+          <div *ngIf="selectedId === 'overview'" class="d-flex">
+            <img
+              src="/assets/messanger.png"
+              class="messanger_icon"
+            />
+            <div class="card-right">
+              <p class="card-text">
+
+Your chatbot will be accessed through a Facebook page. For this reason, it is important that you create a page for your company on Facebook. If your company has a page already, you may use it.
+              </p>
+            </div>
+          </div>
+          <div *ngIf="selectedId === 'config'" class="d-flex">
+            <img _ngcontent-ygl-c137="" src="/assets/messanger.png" class="messanger_icon">
+                <div class="card-right">
+                  <p class="card-text">
+                  <span
+                  class="To-connect-your-chatbot-to-Facebook-you-need-to-use-an-App"
+                >
+                  To connect your chatbot to Facebook, you need to use an App.
+                </span>
+                <p class="card-text">
+                  <span class="old-auth" style="display: block;">
+
+
+                    <i
+                      *ngIf="!oldAuth"
+                      (click)="oldAuthHandler()"
+                    > <div class="radio"><input id="radio-1" name="radio" type="radio" /></div></i>
+                    <i
+                      *ngIf="oldAuth"
+                      (click)="oldAuthHandler()"
+                    > <input id="radio-1" name="radio" type="radio"  checked /> </i>
+                  <span class="Use-my-own-App">
+                    Use my own App
+                  </span>
+                  </span>
+                </p>
+                <p class="card-text">
+                  <span  *ngIf="oldAuth"
+                    class="To-connect-your-personal-App-youll-need-your-Apps-Id-and-Secret-If-you-dont-know-how-to-create"
+                  >
+                    To connect your personal App, you'll need your App's Id and
+                    Secret. If you don't know how to create an App on Facebook, or
+                    need help creating a Page Access Token, check out this article
+                    in Help Center
+                  </span>
+                </p>
+                  <input
+                    *ngIf="oldAuth"
+                    class="form-control"
+                    aria-label="Sizing example input"
+                    type="text"
+                    placeholder="APP ID"
+                  />
+                  <input
+                    *ngIf="oldAuth"
+                    class="form-control"
+                    aria-label="Sizing example input"
+                    type="text"
+                    placeholder="APP Secret"
+                  />
+                  <div *ngIf="oldAuth" class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-primary card-button">
+                      Save Settings
+                    </button>
+                </div>
+                <span class="old-auth" style="display: block;">
+                  <i
+                    *ngIf="!appId"
+                    (click)="appIdHandler()"
+                  > <div class="radio"><input id="radio-1" name="radio" type="radio" /></div></i>
+                  <i
+                    *ngIf="appId"
+                    (click)="appIdHandler()"
+                  > <input id="radio-1" name="radio" type="radio"  checked /> </i>
+<span class="Use-my-own-App">
+  Use iMakerBot native App
+                </span>
+                </span>
+                <br>
+                <p class="card-text">
+<span  *ngIf="appId" class="Please-enter-your-Facebook-account-to-proceed">
+  Please enter your Facebook account to proceed.
+</span>
+                </p>
+                <div *ngIf="appId" class="d-flex justify-content-end">
+                  <button type="button" class="btn btn-primary card-button">
+                    <img src="/assets/facebook 2.svg"
+                    class="facebook-2"> Enter Facebook
+                  </button>
+              </div>
+              </div>
+
+            </div>
+           <!-- <img
+              src="/assets/messanger.png"
+              class="messanger_icon"
+            />
+            <div class="card-right">
+                <div class="row">
+                  <span
+                    class="To-connect-your-chatbot-to-Facebook-you-need-to-use-an-App"
+                  >
+                    To connect your chatbot to Facebook, you need to use an App.
+                  </span>
+                  <div class="col">
+                    <ion-radio-group>
+                      <ion-item lines="none">
+                        <div class="radio">
+                          <input id="radio-1" name="radio" type="radio" checked />
+                          <ion-label for="radio-1" class="radio-label">Use my own App</ion-label>
+                        </div>
+
+                      </ion-item>
+                    </ion-radio-group>
+                    <span
+                    class="To-connect-your-personal-App-youll-need-your-Apps-Id-and-Secret-If-you-dont-know-how-to-create"
+                  >
+                    To connect your personal App, you'll need your App's Id and
+                    Secret. If you don't know how to create an App on Facebook, or
+                    need help creating a Page Access Token, check out this article
+                    in Help Center
+                  </span>
+
+                   <form  [formGroup]="validationTokenForm" (ngSubmit)="onSubmit()" class="container" >
+                      <div class="radio">
+                        <input id="radio-1" name="radio" type="radio" checked />
+                        <label for="radio-1" class="radio-label">Use my own App</label>
+                      </div>
+                      <span
+                        class="To-connect-your-personal-App-youll-need-your-Apps-Id-and-Secret-If-you-dont-know-how-to-create"
+                      >
+                        To connect your personal App, you'll need your App's Id and
+                        Secret. If you don't know how to create an App on Facebook, or
+                        need help creating a Page Access Token, check out this article
+                        in Help Center
+                      </span>
+                      <input
+                        placeholder=" APP ID"
+                        formControlName="AppID"
+                        class="Rectangle-125"
+                      />
+                      <input
+                        placeholder="App Secret"
+                        formControlName="AppSecret"
+                        class="Rectangle-125"
+                      />
+                      <button class="rectangle" type="submit" >Save Settings</button>
+
+                    </form>-->
+
+
+                  <!--  <div class="radio">
+
+                      <a
+                        [routerLink]="['/sett2']"
+                        routerLinkActive="active"
+                        [routerLinkActiveOptions]="{ exact: true }"
+                      >
+                        <input id="radio-1" name="radio" type="radio" checked />
+                      </a>
+                      <label for="radio-1" class="radio-label">
+                        Use iMakerBot native App</label
+                      >
+
+                </div>
+              </div>
+            </div>-->
+            <div *ngIf="selectedId === 'customer'" >
+
+             <div class="d-flex">
+               <img
+                src="/assets/messanger.png"
+                class="messanger_icon"
+              />
+              <div class="card-right">
+                <p class="card-text" >
+
+                  <span class="To-use-the-customer-chat-plugin-you-must-Whitelist-the-domain-of-your-website-Include-the-Facebook">
+                    To use the customer chat plugin, you must:<br>
+                    <p class="p1">. Whitelist the domain of your website <br> . Include the Facebook JavaScript SDK in the page <br> . Include the plugin on your webpage<br>
+                    </span>
+                  <br><br>
+
+             </p>
+              </div>
+             </div>
+          <p class="card-text" >
+            <span class="Domains-Add-domains-where-you-will-make-available-your-chatbot-Type-ENTER-to-separate-them">
+              <span class="text-style-1">Domains</span><br>
+              <span class="text-style-2"></span>
+              Add domains where you will make available your chatbot. Type ENTER to separate them.
+           </span>
+            </p>
+          <div style="display: flex;">
+            <div class="Line-38"></div>
+            <div class="d-flex justify-content-end">
+              <button type="button" class="btn btn-primary card-button" style="width: 72px;height: 21px;margin-top: 15px;">
+                Save Settings
+              </button>
+          </div>
+        </div>
+        <p class="card-text" >
+        <span class="The-following-snippet-of-code-will-give-the-basic-version-of-the-SDK-where-the-options-are-set-to-th">
+          The following snippet of code will give the basic version of the SDK where the options are set to their most common defaults. You should insert it directly after the opening tag on each page you want to load it:
+        </span></p>
+      <img class="img2" src="assets\Ca3.png">
+            </div>
+
+          </div>
+          </div>
+        </div>
+
+
+
+  <div
+    class="d-flex flex-column" style="margin-top: 315px"
+    [ngStyle]="{ backgroundColor: '#f1f4f6' }"
+  >
+    <div class="Line-35"></div>
+    <span class="Need-help-to-create-your-company-chatbot-Request-a-quote">
+      © 2021 iMakerBot - Powered by GDCollectData | All rights reserved |
+      <span class="text-style-1">Terms of Use</span>
+    </span>
+  </div>
+
+
+  </ion-grid>
+</ion-content>

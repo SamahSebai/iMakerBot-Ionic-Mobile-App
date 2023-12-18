@@ -1,0 +1,62 @@
+<ion-header>
+  <!-- <ion-toolbar>
+   </ion-toolbar>-->
+   <div class="flex">
+   <ion-img  class="Group-262" src="assets/iMakerBot.svg"></ion-img>
+   <span class="CHATBOTS">
+     CHATBOTS
+   </span>
+   <span class="HELP-CENTER">
+     HELP CENTER
+   </span>
+   <ion-icon name="notifications-outline" style="color: white; margin-top: 12px;"></ion-icon>
+   <ion-img  class="Group-39" src="assets/Group 39.svg"></ion-img>
+
+ </div>
+
+ </ion-header>
+ <ion-content>
+  <ion-row>
+    <ion-col style="padding: 0px;">
+      <div class="Rectangle-12">
+      <div class="rect ">
+
+        <ion-img class="img1" src="assets/list 1.svg"> </ion-img>
+        <span class="Name-of-ChatBot">
+          Name of ChatBot
+          <ion-icon name="chevron-down-outline" ></ion-icon></span>
+          <ion-icon name="settings-outline" style="color: white;margin-top: 18px;"></ion-icon>
+          <ion-icon name="extension-puzzle-outline" style="color: white; margin-top: 18px;"></ion-icon>
+          <ion-icon name="people-outline" style="color: white; margin-top: 18px;"></ion-icon>
+          <ion-icon name="flask-outline" style="color: white; margin-top: 18px;     margin-right: 10px;"></ion-icon>
+       </div></div>
+    </ion-col>
+  </ion-row>
+  <ion-grid style="background-color: #f0f3f6; " >
+    <div class="providers-body">
+      <ion-item lines="none" >
+        <ion-icon name="chevron-back-outline" style="width: 22px; height: 22px;margin-top: 16px; margin-left: 0px; color: #7c8292!important;"></ion-icon>
+      <div class="title" style="width: 160px; margin-left: 0px;"><span> Entities </span>
+      </div>
+      <i class="fa fa-search" aria-hidden="true" style="margin-top: 20px!important; color: #7c8292!important;margin-left: 30px;"></i>
+      <ion-button fill="clear" type="submit" [routerLink]="['/new-intent']" class="Rectangle-57" router><span class="-Add-Intents">
+        + Add Entities
+      </span></ion-button>
+ </ion-item>
+      <div class="line"></div>
+    </div>
+    <div class="intent-content">
+      <span class="intents-notfound">No Entities found =(</span>
+    </div>
+    <div
+    class="d-flex flex-column" style="margin-top: 166px;"
+    [ngStyle]="{ backgroundColor: '#f1f4f6' }"
+  >
+    <div class="Line-35"></div>
+    <span class="Need-help-to-create-your-company-chatbot-Request-a-quote">
+      © 2021 iMakerBot - Powered by GDCollectData | All rights reserved |
+      <span class="text-style-1">Terms of Use</span>
+    </span>
+    </div>
+  </ion-grid>
+ </ion-content>

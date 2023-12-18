@@ -1,0 +1,491 @@
+<ion-header>
+   <div class="flex">
+   <ion-img  class="Group-262" src="assets/iMakerBot.svg"></ion-img>
+   <span class="CHATBOTS">
+     CHATBOTS
+   </span>
+   <span class="HELP-CENTER">
+     HELP CENTER
+   </span>
+   <ion-icon name="notifications-outline" style="color: white; margin-top: 12px;"></ion-icon>
+   <ion-img  class="Group-39" src="assets/Group 39.svg"></ion-img>
+
+ </div>
+
+ </ion-header>
+ <ion-content>
+  <ion-row>
+    <ion-col style="padding: 0px;">
+      <div class="Rectangle-12">
+      <div class="rect ">
+
+        <ion-img class="img1" src="assets/list 1.svg"> </ion-img>
+        <span class="Name-of-ChatBot">
+          Name of ChatBot
+          <ion-icon name="chevron-down-outline" ></ion-icon></span>
+          <ion-icon name="settings-outline" style="color: white;margin-top: 18px;"></ion-icon>
+          <ion-icon name="extension-puzzle-outline" style="color: white; margin-top: 18px;"></ion-icon>
+          <ion-icon name="people-outline" style="color: white; margin-top: 18px;"></ion-icon>
+          <ion-icon  (click)="toggleChat()" name="flask-outline" style="color: white; margin-top: 18px;     margin-right: 10px;"></ion-icon>
+       </div></div>
+    </ion-col>
+  </ion-row>
+  <ion-grid style="background-color: #353d4b; " >
+
+
+
+
+  <div class="ret-icon">
+   <ion-button (click)="toggleNewBlock()" fill="clear" class="bttn"  size="small"  slot="CENTER" icon-only><ion-icon slot="icon-only" name="add-circle-outline" style="color:#c4c4c4; size: small; "></ion-icon></ion-button>
+   <ion-button fill="clear" class="bttn"  size="small" icon-only><ion-icon slot="icon-only" name="cloud-upload-outline" style="color:#c4c4c4;size:small"></ion-icon></ion-button>
+    <ion-button (click)="togglesettings()" fill="clear" class="bttn"  size="small" icon-only><ion-icon slot="icon-only" name="settings-outline" style="color:#c4c4c4; size:small;" ></ion-icon></ion-button>
+    <ion-button fill="clear" class="bttn" size="small" icon-only><ion-icon name="book-outline" style="color:#c4c4c4; size:small;"></ion-icon></ion-button>
+    <ion-button (click)="togglesearch()" fill="clear" class="bttn"  size="small" icon-only><ion-icon slot="icon-only" name="search-outline" style="color:#c4c4c4;size:small;"></ion-icon></ion-button>
+    <ion-button fill="clear" class="bttn"  size="small" icon-only><ion-icon slot="icon-only" name="clipboard-outline" style="color:#c4c4c4;size:small;"></ion-icon></ion-button>
+  </div>
+  <div class="rect-icon">
+    <ion-button class="Rectangle-19" fill="clear"><span class="Start">Start</span></ion-button>
+
+    <ion-button class="Rectangle-20" fill="clear"><span class="Exceptions">Exceptions</span></ion-button>
+  </div>
+  <div class="rect-icon">
+  <div class="Line2"></div>
+  <div class="Line1"></div>
+</div>
+<div class="rect-icon">
+<ion-icon name="chevron-down-outline" style="color: #7c8292;margin-left: 30px;margin-right: 130px;width: 22px;height: 22px;"></ion-icon>
+<ion-icon name="chevron-down-outline" style="color: #7c8292; width: 22px;height: 22px;"></ion-icon>
+</div>
+<div class="rect-icon">
+<ion-button class="Rectangle-21" fill="clear"> <span class="Welcome">Welcome</span></ion-button>
+<ion-button class="Rectangle-22" fill="clear"> <span class="Default-error">Default error</span></ion-button>
+</div>
+
+<div class="add">
+<ion-button   *ngIf="isNewBlockOpened" (click)="toggleNewPopupBlock()" class="Rectangle-bk" fill="clear"><span class="Welcome">new Block</span> </ion-button>
+</div>
+
+ <div *ngIf="isNewBlockPopupOpened" class="settings">
+      <div class="settings-name">
+        <span class="New-Block">New Block</span>
+        <img
+          (click)="toggleNewPopupBlock()"
+          style="cursor: pointer"
+          class="X"
+          src="assets/X.png"
+        />
+      </div>
+      <div class="Line-10"></div>
+      <div class="settings-header">
+        <span class="Content">Content </span>
+        <span class="Output-condition">Output condition</span>
+        <span class="Actions">Actions</span>
+      </div>
+      <hr />
+      <div class="actions-new-block">
+        <div class="textareaa">
+          <span>
+            <ul>
+              <li
+                *ngFor="let row of blockData"
+                class="new-block-desc-space talktext"
+              >
+                {{ row.description }} {{ row.name }}
+                <i
+                  (click)="deleteBlock(row)"
+                  class="fa fa-trash"
+                  aria-hidden="true"
+                ></i>
+              </li>
+            </ul>
+          </span>
+        </div>
+        <form  [formGroup]="formValue"  >
+          <div class="input-groupp">
+            <input
+              formControlName="description"
+              style="border: none"
+              type="text"
+              class="msg-input"
+              placeholder="description.."
+            />
+
+            <input
+              formControlName="name"
+              style="border: none"
+              type="text"
+              class="msg-input"
+              placeholder="name.."
+            />
+          </div>
+
+          <input
+            type="submit"
+            (click)="addBlock()"
+            class="btn btn-primary mx-2"
+            value="Save"
+          />
+        </form>
+        <div class="media-block-new-block">
+          <i
+            class="fa fa-th-large fa-xl"
+            style="
+              color: #fff;
+              margin: 0 30px 0 0;
+              box-shadow: 4px 4px 4px 2px #d2e8fc;
+              background-color: #208ef0;
+              padding: 10px;
+            "
+            aria-hidden="true"
+          ></i>
+
+          <img
+            style="
+              color: #fff;
+              margin: 12px 23px 11px 0;
+              box-shadow: 4px 4px 4px 2px #d2e8fc;
+              background-color: #208ef0;
+              padding: 10px;
+              width: 40px;
+            "
+            src="assets/carouselfwhite.png"
+          />
+          <i
+            class="fa fa-picture-o fa-xl"
+            style="
+              color: #fff;
+              margin: 0 30px 0 0;
+              box-shadow: 4px 4px 4px 2px #d2e8fc;
+              background-color: #208ef0;
+              padding: 10px;
+            "
+            aria-hidden="true"
+          ></i>
+          <i
+            (click)="toggleCompDesc()"
+            class="fa fa-align-center fa-xl"
+            style="
+              color: #fff;
+              margin: 0 30px 0 0;
+              background-color: #208ef0;
+              box-shadow: 4px 4px 4px 2px #d2e8fc;
+              padding: 10px;
+            "
+            aria-hidden="true"
+          ></i>
+          <i
+            class="fa fa-share fa-xl"
+            style="
+              color: #fff;
+              margin: 0 30px 0 0;
+              box-shadow: 4px 4px 4px 2px #d2e8fc;
+              background-color: #208ef0;
+              padding: 10px;
+            "
+            aria-hidden="true"
+          ></i>
+        </div>
+      </div>
+    </div>
+
+<div class="settings-para" *ngIf="issettingsOpened">
+      <div class="settings-name">
+        <span class="General-Configuration">
+          General Configuration
+        </span>
+        <img
+        (click)="togglesettings()"
+          style="margin-right: 10px ; cursor: pointer;   color: #c4c4c4; "
+          class="X"
+          src="assets/X.png"
+        />
+      </div>
+      <div class="settings-header">
+        <span class="Variables">
+          Variables
+        </span>
+        <span class="Version">
+          Version
+        </span>
+        <span class="Globalactions">
+          Globalactions
+        </span>
+      </div>
+      <hr />
+      <ul class="settings-list">
+        <li class="settings-items">
+          <div (click)="isactive1 = !isactive1" class="settings-div">
+            <img
+              [ngClass]="isactive1 ? class : classnotactive"
+              src="assets/arrowdowngrey.png"
+            />
+            <span class="AI-RELIABILITY">
+              AI RELIABILITY
+            </span>
+          </div>
+          <div class="range-box">
+            <input
+              *ngIf="isactive1"
+              type="range"
+              class="form-range"
+              id="customRange1"
+              min="0"
+              max="100"
+              value="0"
+              oninput="amount.value=rangeInput.value"
+              id="rangeInput"
+              name="rangeInput"
+            />
+
+            <output *ngIf="isactive1" id="amount" name="amount" for="rangeInput"
+              >0</output
+            >
+          </div>
+        </li>
+        <li class="settings-items">
+          <div (click)="isactive2 = !isactive2" class="settings-div">
+            <img
+              [ngClass]="isactive2 ? class : null"
+              src="assets/arrowdowngrey.png"
+            />
+            <span class="AUTOMATIC-TRACKING">
+              AUTOMATIC TRACKING
+            </span>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="flexSwitchCheckChecked"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="settings-items">
+          <div (click)="isactive3 = !isactive3" class="settings-div">
+            <img
+              [ngClass]="isactive3 ? class : null"
+              src="assets/arrowdowngrey.png"
+            />
+            <span class="USE-ROUTER-CONTEXT">
+              USE ROUTER CONTEXT
+            </span>
+                        <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="flexSwitchCheckChecked"
+                style="    margin-left: 0px;"/>
+            </div>
+          </div>
+        </li>
+        <li class="settings-items">
+          <div (click)="isactive4 = !isactive4" class="settings-div">
+            <img
+              [ngClass]="isactive4 ? class : null"
+              src="assets/arrowdowngrey.png"
+            />
+            <span class="SESSION-EXPIRATION">
+              SESSION EXPIRATION
+            </span>
+          </div>
+          <div *ngIf="isactive4" class="input-group-prepend">
+            <div class="sesionExa">
+              <span class="session">
+                {{ testSetting.sessionExpiration }}
+              </span>
+            </div>
+
+            <form [formGroup]="sessionExForm" >
+              <input
+                type="text"
+                class="input-set"
+                formControlName="session_expiration"
+              />
+
+              <button
+                (click)="addSessionEx()"
+                class="btn btn-outline-secondary"
+                type="button"
+              >
+                +
+              </button>
+            </form>
+          </div>
+        </li>
+        <li class="settings-items">
+          <div (click)="isactive5 = !isactive5" class="settings-div">
+            <img
+              [ngClass]="isactive5 ? class : null"
+              src="assets/arrowdowngrey.png"
+            />
+
+            <span class="ACTION-TIMEOUT">
+              ACTION TIMEOUT
+            </span>
+          </div>
+
+          <div class="">
+            <div *ngIf="isactive5" class="input-group-prepend">
+              <div class="sesionExa">
+                <span class="session">
+                  {{ testSetting.actionTimeout }}
+                </span>
+              </div>
+              <input type="text" class="input-set" />
+              <button class="btn btn-outline-secondary" type="button">+</button>
+            </div>
+          </div>
+        </li>
+        <li class="settings-items">
+          <div (click)="isactive6 = !isactive6" class="settings-div">
+            <img
+              [ngClass]="isactive6 ? class : null"
+              src="assets/arrowdowngrey.png"
+            />
+
+            <span class="FLOW-IDENTIFIER">
+              FLOW IDENTIFIER
+            </span>
+          </div>
+          <div *ngIf="isactive6" class="input-group-prepend">
+            <div class="sesionExa">
+              <span class="session">
+                {{ testSetting.flowIdentifier }}
+              </span>
+            </div>
+            <input type="text" class="input-set" />
+            <button class="btn btn-outline-secondary" type="button">+</button>
+          </div>
+        </li>
+        <li class="settings-items">
+          <div (click)="isactive7 = !isactive7" class="settings-div">
+            <img
+              [ngClass]="isactive7 ? class : null"
+              src="assets/arrowdowngrey.png"
+            />
+            <span class="CONFIGURATION-VARIABLES">
+              CONFIGURATION VARIABLES
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="" *ngIf="issearchOpened">
+      <div
+        class="search-container search"
+
+      >
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search"
+
+        />
+        <div class="circle">
+          <img src="assets/search-icon.png" />
+        </div>
+      </div>
+      <div *ngFor="let row of blockData">
+        <div *ngIf="searchText==='' || row.name.toLowerCase().includes(searchText)" >
+       <span>{{row.name}}</span>
+      </div>
+    </div>
+    </div>
+    <form
+    [formGroup]="chatForm"
+    action=""
+    class="chat-popup"
+    *ngIf="isChatOpen"
+  >
+    <div class="header-chat">
+      <h3>Test your chatbot</h3>
+      <i
+        style="cursor: pointer"
+        class="fa fa-times fa-2x"
+        (click)="toggleChat()"
+        aria-hidden="true"
+      ></i>
+    </div>
+    <div class="chat-nav">
+      <img
+        src="assets/header_dropdown.png"
+        style="
+          background-color: #fff;
+          border-radius: 50%;
+          padding: 2%;
+          width: 10%;
+        "
+      />
+      <span class="chatbot-name">Name of chatbot</span>
+    </div>
+    <div class="textareaa">
+      <span>
+        <ul>
+          <li class="bot-msg-space talktext">
+            <!-- <img [src]=`${{ chatBot.image }}` /> -->
+            <!-- <span> {{ chatBot.image }}</span> -->
+            <span class="chat-msg-name">
+              {{ chatBot.message }}
+              <span>{{ chatBot.chatbotname }}</span></span
+            >
+          </li>
+          <li *ngFor="let msg of msgs" class="bot-msg-space-user talktext">
+            {{ msg.message }}
+          </li>
+        </ul>
+      </span>
+    </div>
+    <div class="actions">
+      <div class="input-groupp">
+        <input
+          formControlName="msg"
+          style="border: none"
+          type="text"
+          class="msg-input"
+          placeholder="Send a message.."
+        />
+        <i
+          style="color: #487fea; padding-left: 2%"
+          class="fa fa-smile-o fa-2x"
+          aria-hidden="true"
+        ></i>
+        <i
+          (click)="addMsg()"
+          [attr.disabled]="chatForm.invalid"
+          style="color: #487fea; padding-left: 2%; cursor: pointer"
+          class="fa fa-paper-plane-o fa-2x"
+          aria-hidden="true"
+        ></i>
+      </div>
+      <div class="chat-footer">
+        <span class="creator">By GDCollectData</span>
+      </div>
+    </div>
+  </form>
+<div class="saved">
+<ion-button class="Rectangle-23" fill="clear"> <div class="sev"><ion-icon name="checkmark-circle-outline" style="color: #c4c4c4;"></ion-icon> <span class="Saved">
+  Saved
+</span></div></ion-button>
+<ion-button fill="clear" style="position: absolute;     left: 59px;top: 520px;width: 53px;height: 49px;"><ion-icon slot="icon-only"  name="return-up-back-outline" style="color: white;"></ion-icon></ion-button>
+<ion-button fill="clear" style="position: absolute;     left: 90px;top: 520px;width: 53px;height: 49px;"><ion-icon name="return-up-forward-outline" style="color: white;"></ion-icon></ion-button>
+</div>
+<div
+class="d-flex flex-column" style="margin-top: 0px "
+[ngStyle]="{ backgroundColor: '#353d4b'  }"
+>
+<div class="Line-35"></div>
+<span class="Need-help-to-create-your-company-chatbot-Request-a-quote">
+  © 2021 iMakerBot - Powered by GDCollectData | All rights reserved |
+  <span class="text-style-1">Terms of Use</span>
+</span>
+</div>
+</ion-grid>
+  </ion-content>
+
+
+
+
+
+
+
+

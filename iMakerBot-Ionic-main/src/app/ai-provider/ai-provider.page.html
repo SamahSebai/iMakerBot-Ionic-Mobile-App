@@ -1,0 +1,78 @@
+<ion-header>
+  <!-- <ion-toolbar>
+   </ion-toolbar>-->
+   <div class="flex">
+   <ion-img  class="Group-262" src="assets/iMakerBot.svg"></ion-img>
+   <span class="CHATBOTS">
+     CHATBOTS
+   </span>
+   <span class="HELP-CENTER">
+     HELP CENTER
+   </span>
+   <ion-icon name="notifications-outline" style="color: white; margin-top: 12px;"></ion-icon>
+   <ion-img  class="Group-39" src="assets/Group 39.svg"></ion-img>
+
+ </div>
+
+ </ion-header>
+
+ <ion-content>
+  <ion-row>
+    <ion-col style="padding: 0px;">
+      <div class="Rectangle-12">
+      <div class="rect ">
+
+        <ion-img class="img1" src="assets/list 1.svg"> </ion-img>
+        <span class="Name-of-ChatBot">
+          Name of ChatBot
+          <ion-icon name="chevron-down-outline" ></ion-icon></span>
+          <ion-icon name="settings-outline" style="color: white;margin-top: 18px;"></ion-icon>
+          <ion-icon name="extension-puzzle-outline" style="color: white; margin-top: 18px;"></ion-icon>
+          <ion-icon name="people-outline" style="color: white; margin-top: 18px;"></ion-icon>
+          <ion-icon name="flask-outline" style="color: white; margin-top: 18px;     margin-right: 10px;"></ion-icon>
+       </div></div>
+    </ion-col>
+  </ion-row>
+  <ion-grid style="background-color: #f5f8f9; " >
+  <div class="providers-body">
+    <div class="title"><ion-icon name="chevron-back-outline" style="width: 22px; height: 22px;"></ion-icon><span> AI Providers</span></div>
+    <div class="line"></div>
+   <div class="providers">
+        <div [routerLink]="['/watson']" class="card watson">
+           <img src="/assets/watson_icon2 1.webp" class="watson_icon" />
+            <span class="card-provider-title"> IBM Watson </span>
+
+            <span class="card-connect"><hr class="card-line" />Connect</span>
+        </div>
+
+        <div [routerLink]="['/micro-luis']" class="card microsoft">
+            <img src="/assets/luis_icon 1.webp" class="microsoft_icon" />
+            <span class="card-provider-title"> Microsoft LUIS </span>
+
+            <span class="card-connect"><hr class="card-line" />Connect</span>
+        </div>
+
+        <div [routerLink]="['/dialogflow']" class="card dialogflow">
+            <img src="/assets/Dialogflow 1.webp" class="dialogflow_icon" />
+            <span class="card-provider-title"> DialogFlow </span>
+            <span class="card-connect"><hr class="card-line" />Connect</span>
+        </div>
+
+        <div [routerLink]="['/#']" class="card rasa">
+            <img src="/assets/rasa_logo_horizontal_purple-1 1.webp" class="rasa_icon" />
+            <span class="card-provider-title"> RASA </span>
+
+            <span class="card-connect"><hr class="card-line" />Connect</span>
+        </div>
+
+        <div [routerLink]="['/#']" class="card amazon-lex">
+            <img src="/assets/AmazonLex 1.webp" class="amazonlex_icon" />
+            <span class="card-provider-title"> Amazon LEX </span>
+            <span class="card-connect"><hr class="card-line" />Connect</span>
+        </div>
+    </div>
+</div>
+
+
+</ion-grid>
+ </ion-content>

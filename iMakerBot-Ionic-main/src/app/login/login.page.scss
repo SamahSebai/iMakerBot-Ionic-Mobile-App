@@ -1,0 +1,312 @@
+ion-content {
+  --background: #191d4d;
+
+}
+.Group-37 {
+  width: 101px;
+  height: 30px;
+ /* margin: 20px 0px 0px 20px;
+  object-fit: contain;*/
+
+}
+.Ellipse-7 {
+  width: 98px;
+  height: 100px;
+ /* margin: -40px 0px 0px 270px;*/
+  border-radius: 100px;
+  background-color: rgba(58, 72, 104, 0.5);
+}
+.Ellipse-5 {
+  width: 140px;
+  height: 143px;
+ /* margin: 320px 91px 0 0;
+  padding: 60px 0 71px 24px;*/
+  border-radius: 100px;
+  background-color: rgba(58, 72, 104, 0.5);
+  margin: -100px;
+
+}
+.Ellipse-6 {
+  width: 109px;
+  height: 106px;
+  /*margin: 18px 36px 320px 71px;*/
+  border-radius: 100px;
+  background-color: rgba(58, 72, 104, 0.5);
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: -50px;
+}
+.btn-signin{
+  width: 118px;
+  height: 42px;
+  flex-grow: 0;
+  border-radius: 8px;
+  box-shadow: 1px 1px 0.5px  gray;
+
+
+ /* text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color:#5e72e4!important;
+*/
+
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.Rectangle-109 {
+  width: 106px;
+  height: 35px;
+  flex-grow: 0;
+  /*margin: 11px 31px 0 0;*/
+  /*padding: 10px 21px 10px 14px;*/
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: solid 1px #c4c4c4;
+  background-color: #fff;
+}
+.GITHUB {
+  width: 48px;
+  height: 12px;
+  flex-grow: 0;
+  margin: 0 0 3px 8px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #5e72e4;
+}
+
+ion-item{
+  --ion-background-color:transparent!important;
+}
+.ion-text-center{
+  font-family: Roboto;
+  width: 73px;
+  height: 20px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #7c8292;
+}
+.Email {
+  width: 35px;
+  height: 12px;
+  margin: 0 0 0 13px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #7c8292;
+}
+.Password {
+  width: 62px;
+  height: 12px;
+  margin: 3px 99px 0 13px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #7c8292;
+}
+.ion-button-center{
+  width: 118px;
+  height: 42px;
+  flex-grow: 0;
+  /*margin: 38px 100px 0 41px;
+  padding: 15px 32px;*/
+  border-radius: 8px;
+  background-color: #5e72e4;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 30%;
+}
+.SIGN-IN {
+  width: 54px;
+  height: 12px;
+  flex-grow: 0;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+.Remember-me {
+  width: 89px;
+  height: 12px;
+  margin: 28px 11px 38px 8px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #7c8292;
+}
+.GOOGLE {
+  width: 48px;
+  height: 11.7px;
+  flex-grow: 0;
+  margin: 1px 0 1.9px 12px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #5e72e4;
+}
+.Rectangle-105 {
+  width: 107px;
+  height: 35px;
+  flex-grow: 0;
+  /*margin: 11px 0 0 31px;*/
+ /* padding: 9.7px 16px 10.7px;*/
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: solid 1px #c4c4c4;
+  background-color: #fff;
+}
+.Forgot-password {
+  width: 150px;
+  height: 10px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #7c8292;
+}
+.Create-new-account {
+  width: 150px;
+  height: 10px;
+  /*margin: 9px 29px 20px 36px;*/
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #7c8292;
+}
+.Rectangle-102 {
+  width: 235px;
+  height: 39px;
+  margin: 33px 37px 27px 35px;
+  padding: 14px 159px 13px 13px;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+.iconsicon-github {
+  width: 13.3px;
+  height: 13px;
+  flex-grow: 0;
+  object-fit: contain;
+
+}
+.google-1 {
+  width: 15px;
+  height: 14.6px;
+  flex-grow: 0;
+  /*margin: 0 12px 0 0;*/
+  object-fit: contain;
+}
+.Group-250 {
+  width: 15px;
+  height: 12px;
+ /*margin: 0 13px 0 0;*/
+  object-fit: contain;
+}
+.Lock {
+  width: 15px;
+  height: 15px;
+  margin: 0 13px 0 0;
+  object-fit: contain;
+}
+.Rectangle-101 {
+  width: 307px;
+  height: 150px;
+  flex-grow: 0;
+  /*margin: 0 0 23.5px;*/
+ /* padding: 8px 35px 29.5px 28px;*/
+  border: solid 1px #c4c4c4;
+  background-color: #fff;
+}
+.Rectangle-100 {
+  width: 307px;
+  height:  344px;
+  flex-grow: 0;
+  /*margin: 63px 29px 9px 24px;*/
+ /* padding: 0 0 43px;*/
+  border-radius: 4px;
+  background-color: #f4f5f7;
+}
+.Rectangle-106 {
+  width: 13px;
+  height: 13px;
+ /* margin: 26px 8px 39px 35px;
+  border-radius: 3px;*/
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+ion-checkbox{
+  --border-radius: 5px;
+  /*--border-color:red;*/
+  --size:15px;
+ /* background-color: #fff;*/
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
+}
+.ligne {
+  display: inline-block;
+  }
+  .Rectangle-102 {
+    width: 400px;
+    height: 39px;
+    margin: 33px 37px 27px 35px;
+    /*padding: 14px 159px 13px 13px;*/
+    border-radius: 8px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+  }
+.input{
+  background-color:white;
+  border-radius: 12px;
+ box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}

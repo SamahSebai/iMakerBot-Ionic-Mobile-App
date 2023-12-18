@@ -1,0 +1,94 @@
+<ion-content>
+
+<ion-grid>
+<ion-row>
+  <ion-col>
+    <ion-img  class="Group-37" src="assets/iMakerBot.svg"></ion-img>
+  </ion-col>
+</ion-row>
+  <div class="Ellipse-6"></div>
+<ion-row>
+  <ion-col>
+<div class="flex-center"  >
+  <ion-card >
+
+  <div class="Rectangle-101">
+  <ion-card-header>
+      <ion-item lines="none" >
+        <ion-label color="medium"  class="ion-text-center">Sign up with</ion-label>
+      </ion-item>
+      <div class="flex">
+        <ion-button class="Rectangle-109" fill="clear">
+          <ion-img  slot="start" src="assets/github.svg"  class="iconsicon-github"></ion-img>
+          <span class="GITHUB">
+            GITHUB
+          </span>
+        </ion-button>
+        <ion-button  class="Rectangle-105" fill="clear" >
+          <ion-img  slot="start" src="assets/google.svg"  class="google-1"></ion-img>
+          <span class="GOOGLE">
+            GOOGLE
+          </span>
+        </ion-button>
+      </div>
+    </ion-card-header>
+  </div>
+  <div class="Rectangle-100">
+    <ion-card-content>
+      <form   [formGroup]="LoginForm" (ngSubmit)="Login()">
+      <ion-item lines="none" >
+        <ion-label color="medium" class="ion-text-center">Or sign in with credentials</ion-label>
+      </ion-item>
+      <ion-item fill="solid" lines="none" >
+        <ion-label position="floating">
+          <ion-icon name="mail-outline" slot="start" color="medium"></ion-icon>  <span class="Email">
+            Email
+          </span></ion-label>
+        <ion-input type="email" formControlName="email" name="email"></ion-input>
+      </ion-item>
+      <ion-item fill="solid" lines="none" >
+        <ion-label position="floating">
+          <ion-icon name="bag-outline" color="medium" ></ion-icon> <span class="Password">
+            Password
+          </span></ion-label>
+        <ion-input type="password" formControlName="password"  name="password" ></ion-input>
+      </ion-item>
+      <ion-item lines="none" >
+        <ion-checkbox color="primary"></ion-checkbox>
+        <ion-label color="medium" ><span class="Remember-me">
+          Remember me
+        </span></ion-label>
+      </ion-item>
+
+    <br>
+      <ion-button  class="ion-button-center" fill="clear" type="submit" expand="block"  [disabled]="f.email.errors ||f.password.errors"><span class="SIGN-IN">
+        SIGN IN
+      </span></ion-button>
+    </form>
+    </ion-card-content>
+    </div>
+  </ion-card> </div>
+</ion-col>
+</ion-row>
+<ion-item lines="none" class="trp" style="background-color: #f0f3f6!important;">
+  <ion-button  color="medium" slot="start" fill="clear" [routerLink]="['/confirme-email']" ><span class="Forgot-password">
+    Forgot password?
+  </span></ion-button>
+  <ion-button  color="medium" slot="end" fill="clear" expand="block"   [routerLink]="['/register']"><span class="Create-new-account">
+    Create new account
+  </span></ion-button>
+</ion-item>
+   <ion-row>
+      <ion-col>
+    <div class="Ellipse-5" ></div>
+  </ion-col>
+</ion-row>
+  <!-- <ion-row>
+      <ion-col>
+    <div class="Ellipse-7"></div>
+  </ion-col>
+</ion-row>-->
+
+</ion-grid>
+
+</ion-content>

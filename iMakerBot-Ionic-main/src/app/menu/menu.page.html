@@ -1,0 +1,34 @@
+<ion-menu contentId="content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title class="text-center">Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-content>
+
+    <ion-menu-toggle *ngFor="let m of menus">
+      <ion-item *ngIf="m.categorie === choseMenu"class="item" (click)="onLoadItem(m)">
+        <ion-row>
+          <div style="color:rgb(162, 145, 231);font-size: 20px;">{{m.title}}</div>
+        </ion-row>
+
+       <br>
+       <br>
+       <br>
+       <br>
+        <ion-row>
+          <div style="color:gray;font-size: 10px;margin-left: 20%;margin-top: 20%;">
+            {{m.description}}
+          </div>
+        </ion-row>
+
+      </ion-item>
+
+    </ion-menu-toggle>
+
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="content"></ion-router-outlet>

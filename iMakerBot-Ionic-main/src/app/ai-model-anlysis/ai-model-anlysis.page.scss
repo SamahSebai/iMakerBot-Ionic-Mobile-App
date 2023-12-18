@@ -1,0 +1,326 @@
+.header{
+    padding: 10px;
+    background: rgb(51, 51, 107);
+    color:white
+}
+
+.interactions{
+    font-size: 20px;
+    color: rgb(25, 25, 49);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+   
+}
+ion-item{
+    height: 50px;
+}
+ion-list{
+    height: 50%;
+}
+.MenuBtn{
+    display: none;
+}
+.img{
+    height: 45px;
+    width: 100%;
+    position: relative;
+    right:40%;
+    margin-top: 1%;
+}
+
+.menu-navbar{
+    display: none;
+}
+.img-drop{
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin-left: 10px;
+}
+.chatbots{
+    position:absolute;
+    top:30%;
+    left:25%;
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.help_chatbots{
+    position:absolute;
+    top:30%;
+    left:50%;
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.user{
+    position:absolute;
+    top:30%;
+    left:80%;
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.secondNav{
+    padding: 10px;
+    height: 8%;
+    
+
+}
+.demoBot{
+    color:white;
+    font-size:15px;
+    position: absolute;
+    left:7%;
+    text-decoration: none;
+    
+}
+.Generateur{
+    color:white;
+    font-size:15px;
+    position: absolute;
+    left:25%;
+    text-decoration: none;
+}
+.Intelegence{
+    color:white;
+    font-size:15px;
+    position: absolute;
+    left:37%;
+    text-decoration: none;
+}
+.Canaux{
+    color:white;
+    font-size:15px;
+    position: absolute;
+    left:54%;
+    text-decoration: none;
+}
+.Analytique{
+    color:white;
+    font-size:15px;
+    position: absolute;
+    left:61%;
+    text-decoration: none;
+}
+.point{
+    color:white;
+    font-size:15px;
+    position: absolute;
+    left: 73%;
+    text-decoration: none;
+}
+.logo{
+    position: absolute;
+    left: 80%;
+    color: white;
+
+}
+@media(max-width:920px){
+    .header{
+        padding: 7px;
+        background: rgb(51, 51, 107);
+        color:white
+    }
+    .img{
+        height: 40px;
+        width: 100%;
+        position: relative;
+        right:37%;
+        margin-top: 1%;
+    }
+    .img-drop{
+        width: 20px;
+        height: 20px;
+        float: right;
+        margin-left: 7px;
+    }
+    .chatbots{
+        position:absolute;
+        top:30%;
+        left:25%;
+        text-decoration: none;
+        color:white;
+        font-size: 15px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .help_chatbots{
+        position:absolute;
+        top:30%;
+        left:45%;
+        text-decoration: none;
+        color:white;
+        font-size: 15px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .user{
+        position:absolute;
+        top:30%;
+        left:70%;
+        text-decoration: none;
+        color:white;
+        font-size: 15px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .Generateur{
+        color:white;
+        font-size:12px;
+        position: absolute;
+        left:25%;
+        text-decoration: none;
+    }
+    .Intelegence{
+        color:white;
+        font-size:12px;
+        position: absolute;
+        left:37%;
+        text-decoration: none;
+    }
+    .Canaux{
+        color:white;
+        font-size:12px;
+        position: absolute;
+        left:54%;
+        text-decoration: none;
+    }
+    .Analytique{
+        color:white;
+        font-size:12px;
+        position: absolute;
+        left:61%;
+        text-decoration: none;
+    }
+    .point{
+        color:white;
+        font-size:12px;
+        position: absolute;
+        left: 73%;
+        text-decoration: none;
+    }
+    .logo{
+        position: absolute;
+        left: 80%;
+        color: white;
+    
+    }
+  
+
+}
+.nav2{
+    display: none;
+}
+@media(max-width:700px){
+    .nav1{
+        display:none;
+    }
+    .img{
+        height: 35px;
+        width: 100%;
+        position: relative;
+        right:1%;
+        margin-top: 2%;
+    }
+    .menu-navbar{
+        display:block;
+    
+        
+        
+    }
+    .menu{
+        float:right;
+        height: 10%;
+        width: 10%;
+        position: relative;
+        bottom: 25px;
+        margin-right: 5%;
+    }
+    .header{
+        padding: 2px;
+        background: rgb(51, 51, 107);
+        color:white
+    }
+    .nav2{
+        display: block;
+        border-radius: 10px;
+        width: 95%;
+        height: 70%;
+        float: right;
+       
+        
+        
+        
+        
+    }
+    .nav3{
+        display: block;
+        border-radius: 10px;
+        width: 95%;
+        height: 35%;
+        float: right;
+        
+        
+    }
+    ion-list ion-item{
+        
+        color:rgb(51, 51, 107);
+        font-size: 15px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    ion-list ion-item a:hover{
+        color: rgb(46, 173, 247);
+        
+    }
+    .MenuBtn{
+        display: block;
+        position: absolute;
+        left:40%;
+        color: white;
+    }
+    .Generateur{
+        display: none;
+    }
+    .Intelegence{
+        display: none;
+    }
+    .Canaux{
+        display: none;
+    }
+    .Analytique{
+        display: none;
+    }
+    .point{
+        display: none;
+    }
+    .logo{
+        position: absolute;
+        left: 70%;
+        color: white;
+    
+    }
+  
+    
+    
+}
+@media(max-width:440px){
+    .bars{
+        margin-left: 50%;
+    }
+    .logo{
+        position: absolute;
+        left: 60%;
+        color: white;
+    
+    }
+}
+@media(max-width:440px){
+    .MenuBtn{
+        display: block;
+        position: absolute;
+        left:50%;
+        color: white;
+    }
+
+}

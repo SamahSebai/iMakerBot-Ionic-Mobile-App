@@ -1,0 +1,168 @@
+<ion-header>
+  <!-- <ion-toolbar>
+   </ion-toolbar>-->
+   <div class="flex">
+   <ion-img  class="Group-262" src="assets/iMakerBot.svg"></ion-img>
+   <span class="CHATBOTS">
+     CHATBOTS
+   </span>
+   <span class="HELP-CENTER">
+     HELP CENTER
+   </span>
+   <ion-icon name="notifications-outline" style="color: white; margin-top: 12px;"></ion-icon>
+   <ion-img  class="Group-39" src="assets/Group 39.svg"></ion-img>
+
+ </div>
+
+ </ion-header>
+ <ion-content>
+  <ion-row>
+    <ion-col style="padding: 0px;">
+      <div class="Rectangle-12">
+      <div class="rect ">
+
+        <ion-img class="img1" src="assets/list 1.svg"> </ion-img>
+        <span class="Name-of-ChatBot">
+          Name of ChatBot
+          <ion-icon name="chevron-down-outline" ></ion-icon></span>
+          <ion-icon name="settings-outline" style="color: white;margin-top: 18px;"></ion-icon>
+          <ion-icon name="extension-puzzle-outline" style="color: white; margin-top: 18px;"></ion-icon>
+          <ion-icon name="people-outline" style="color: white; margin-top: 18px;"></ion-icon>
+          <ion-icon name="flask-outline" style="color: white; margin-top: 18px;     margin-right: 10px;"></ion-icon>
+       </div></div>
+    </ion-col>
+  </ion-row>
+  <ion-grid >
+    <div class="providers-body">
+      <div class="rect">
+      <ion-item lines="none" >
+
+        <ion-icon name="chevron-back-outline" style="width: 38px; height: 22px;margin-top: 16px; margin-left: 0px; color: #7c8292!important;"></ion-icon>
+      <div class="title" style="width: 160px; margin-left: 0px;"><span> Dashboard      </span>
+      </div>
+
+      <ion-img  class="Group-134" src="assets/Group 134.svg"></ion-img>
+      <span class="Update">  Update </span>
+      <ion-button fill="clear" type="submit" [routerLink]="['/new-intent']" class="Rectangle-46" router>
+        <ion-img  src="assets/5.png"></ion-img>
+        <span class="Export">
+        Export
+      </span></ion-button>
+
+ </ion-item></div>
+      <div class="line"></div>
+      <div class="Rectangle-36">
+        <input class="date" type="date" placement="left" clearPosition="left" containerClass="theme-green" />
+      </div>
+    </div>
+
+    <div class="deux">
+      <div class="Rectangle-35">
+        <span class="Users"> Users </span>
+        <span
+          class="All-unique-user-who-received-or-sent-a-message-to-the-chatbot"
+        >
+          All unique user who received or sent a message to the chatbot.
+        </span>
+        <div class="ret">
+          <div class="Rectangle-44">
+            <span class="Active"> Active</span>
+
+           <div *ngFor="let user of users">
+              <div class="span1">
+                {{ user.active === 0 ? 0 : user.active }}
+              </div>
+            </div>
+          </div>
+          <div class="Rectangle-45">
+            <span class="Engaged"> Engaged </span>
+            <div *ngFor="let user of users">
+              <div class="span1">
+                {{ user.engaded === 0 ? 0 : user.engaded }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Rectangle-55">
+        <span class="Messages"> Messages </span>
+        <span
+          class="They-are-counted-when-the-chatbot-send-or-receive-messages-from-contacts"
+        >
+          They are counted when the chatbot send or receive messages from
+          contacts.
+        </span>
+        <div class="A">
+          <div class="Rectangle-54">
+            <span class="Total"> Total </span>
+              <div *ngFor="let Message of msg">
+              <div class="span1">
+                {{ Message.total === 0 ? 0 : Message.total }}
+              </div>
+            </div>
+          </div>
+          <div class="Rectangle-54">
+            <span class="Received"> Received </span>
+              <div *ngFor="let Mes of msg">
+              <div class="span1">
+                {{ Mes.recieved === 0 ? 0 : Mes.recieved }}
+              </div>
+            </div>
+          </div>
+          <div class="Rectangle-54">
+            <span class="Sent"> Sent </span>
+              <div *ngFor="let Mes of msg">
+              <div class="span1">{{ Mes.sent === 0 ? 0 : Mes.sent }}</div>
+            </div>
+          </div>
+          <div class="Rectangle-54">
+            <span class="Active"> Active </span>
+              <div *ngFor="let Mes of msg">
+              <div class="span1">{{ Mes.active === 0 ? 0 : Mes.active }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="rect-37-60-38">
+      <div class="Rectangle-60">
+        <span class="Proactive-messages-per-channel">
+          Proactive messages per channel
+        </span>
+        <span class="There-are-no-proactive-messages-in-the-chosen-period">
+          There are no proactive messages in the chosen period
+        </span>
+      </div>
+    </div>
+      <div class="Rectangle-37">
+
+              <h2>Users per day</h2>
+              <div class="Chart-wrapper">
+            <canvas #hrzLineChart2 ></canvas>
+          </div>
+
+      </div>
+    <div class="Rectangle-38">
+
+
+              <h2>Messages per day</h2>
+              <div class="Chart-wrapper">
+            <canvas #hrzLineChart3></canvas>
+          </div>
+
+      </div>
+
+
+    </div>
+    <div
+    class="d-flex flex-column" style="margin-top: 0px"
+    [ngStyle]="{ backgroundColor: '#f1f4f6' }"
+  >
+    <div class="Line-35"></div>
+    <span class="Need-help-to-create-your-company-chatbot-Request-a-quote">
+      © 2021 iMakerBot - Powered by GDCollectData | All rights reserved |
+      <span class="text-style-1">Terms of Use</span>
+    </span>
+  </div>
+  </ion-grid>
+  </ion-content>
